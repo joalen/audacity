@@ -22,7 +22,7 @@ jobs:
       - name: Build repository 
         run: | 
           mkdir build && cd build
-          cmake -G "Unix Makefiles" ../audacity
+          cmake -G "Unix Makefiles" ..
           make -j`nproc`
       
       - name: Install Chap dependencies
